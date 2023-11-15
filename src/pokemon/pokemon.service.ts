@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
-import { CreatePokemonDto } from './dto/create-pokemon.dto';
-import { UpdatePokemonDto } from './dto/update-pokemon.dto';
+import { CreatePokemonDto, UpdatePokemonDto } from './dto';
 
 @Injectable()
 export class PokemonService {
   create(createPokemonDto: CreatePokemonDto) {
-    return 'This action adds a new pokemon';
+    createPokemonDto.name = createPokemonDto.name.trim().toLocaleLowerCase();
+    return createPokemonDto;
   }
 
   findAll() {
@@ -17,7 +17,9 @@ export class PokemonService {
   }
 
   update(id: number, updatePokemonDto: UpdatePokemonDto) {
-    return `This action updates a #${id} pokemon`;
+    return `This action updates a #${id} pokemon with ${JSON.stringify(
+      updatePokemonDto,
+    )}`;
   }
 
   remove(id: number) {
