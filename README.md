@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/NODE-v18.18.2-blue" />
-  <img src="https://img.shields.io/badge/NPM-v9.8.1-blue" alt="NPM Version" />
+  <img src="https://img.shields.io/badge/PNPM-v8.10.2-blue" alt="NPM Version" />
   <img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" />
   <img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" />
   <img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" />
