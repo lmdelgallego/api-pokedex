@@ -1,7 +1,7 @@
 <p align="center"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/node-v18.18.2-green" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Flmdelgallego%2Fapi-pokedex%2Fblob%2Fmain%2Fpackage.json&query=%24.version&label=version" />
   <img src="https://img.shields.io/badge/npm-v9.8.1-blue" alt="NPM Version" />
   <img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" />
   <img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" />
