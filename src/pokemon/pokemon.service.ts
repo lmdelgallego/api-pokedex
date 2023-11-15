@@ -1,4 +1,8 @@
-import { Injectable } from '@nestjs/common';
+import {
+  BadRequestException,
+  Injectable,
+  InternalServerErrorException,
+} from '@nestjs/common';
 import { CreatePokemonDto, UpdatePokemonDto } from './dto';
 import { Model } from 'mongoose';
 import { Pokemon } from './entities/pokemon.entity';
@@ -13,8 +17,20 @@ export class PokemonService {
 
   async create(createPokemonDto: CreatePokemonDto) {
     createPokemonDto.name = createPokemonDto.name.trim().toLocaleLowerCase();
-    const pokemon = await this.pokemonModel.create(createPokemonDto);
-    return pokemon;
+    try {
+      const pokemon = await this.pokemonModel.create(createPokemonDto);
+      return pokemon;
+    } catch (error) {
+      console.log(error);
+      if (error.code === 11000) {
+        throw new BadRequestException(
+          `Pokemon already exists - ${JSON.stringify(error.keyValue)}`,
+        );
+      }
+      throw new InternalServerErrorException(
+        `Error creating pokemon - Check server logs for more details`,
+      );
+    }
   }
 
   findAll() {
