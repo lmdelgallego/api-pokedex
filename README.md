@@ -1,8 +1,8 @@
 <p align="center"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Flmdelgallego%2Fapi-pokedex%2Fblob%2Fmain%2Fpackage.json&query=%24.version&label=version" />
-  <img src="https://img.shields.io/badge/npm-v9.8.1-blue" alt="NPM Version" />
+  <img src="https://img.shields.io/badge/NODE-v18.18.2-blue" />
+  <img src="https://img.shields.io/badge/NPM-v9.8.1-blue" alt="NPM Version" />
   <img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" />
   <img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" />
   <img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" />
@@ -64,13 +64,11 @@ $ pnpm run test:cov
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Luis Miguel Del Gallego](lmdelgallego@gmail.com)
+- Website - [https://lmdelgallego.github.io/](https://lmdelgallego.github.io/)
+- LinkedIn - [LinkedIn](https://linkedin.com/in/luis-miguel-del-gallego-horta)
 
 ## License
 
