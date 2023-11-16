@@ -44,7 +44,7 @@ export class PokemonService {
       pokemon = await this.pokemonModel.findOne({ no: +term });
     }
     // MondoID
-    if (isValidObjectId(term)) {
+    if (!pokemon && isValidObjectId(term)) {
       pokemon = await this.pokemonModel.findById(term);
     }
     // MongoName
