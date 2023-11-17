@@ -60,7 +60,13 @@ $ pnpm run test:e2e
 $ pnpm run test:cov
 ```
 
-##
+## SEED
+
+Populate BD with pokemons
+
+```curl
+http://localhost:3000/api/v2/seed
+```
 
 ## Support
 
