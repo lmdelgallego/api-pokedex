@@ -23,8 +23,4 @@ import { EnvConfiguration } from './config/app.config';
   controllers: [],
   providers: [],
 })
-export class AppModule {
-  constructor() {
-    console.log('AppModule loaded', process.env);
-  }
-}
+export class AppModule {}
