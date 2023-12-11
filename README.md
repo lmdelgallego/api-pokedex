@@ -34,6 +34,11 @@
 pnpm install
 ```
 
+## Configuration
+
+Cloning ```.example_env``` and rename copied file to ```.env``` then fill environment variable
+
+
 ## Running the app
 
 ```bash
